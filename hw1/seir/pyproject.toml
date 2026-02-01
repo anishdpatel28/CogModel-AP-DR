@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seir"
+version = "0.1.0"
+description = "SEIR epidemic simulation mini-project"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["simulation*", "viz*"]
