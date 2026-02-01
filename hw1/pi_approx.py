@@ -13,7 +13,8 @@ def estimate_pi(num_points):
             points_inside += 1
     print(f"\rProgress: {num_points}/{num_points}", end="", flush=True)
 
-    return pi_estimate = 4 * (points_inside / num_points)
+    pi_estimate = 4 * (points_inside / num_points)
+    return pi_estimate
 
 if __name__ == "__main__":
     print("How many iterations would you like to do?")
